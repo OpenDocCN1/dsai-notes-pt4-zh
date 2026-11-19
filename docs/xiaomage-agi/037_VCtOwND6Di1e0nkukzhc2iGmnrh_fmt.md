@@ -1,0 +1,418 @@
+
+# 全球AI大模型盘点（全网首发）
+
+> 来源：[https://xmgtoagi.feishu.cn/docx/GrrTdVPlmoEfXFxjiP6cFge5nac](https://xmgtoagi.feishu.cn/docx/GrrTdVPlmoEfXFxjiP6cFge5nac)
+
+> 作者：小码哥
+
+排名不分先后，创作不易，禁止搬运。
+
+## 一、全球大模型
+
+1. [ChatGPT](https://chat.openai.com/)
+
+ChatGPT 是人工智能公司 OpenAI 基于 GPT-3.5 研发的大规模对话式语言模型，目前处于测试阶段，拥有 OpenAI 账户即可免费使用。 ChatGPT 采用对话格式，目前已经做到流利回答问题、纠正自己的错误、挑战用户提出的不正确的前提并拒绝不正当的要求，且支持中文。2023/03/15 凌晨，openAI 发布了多模态预训练大模型 GPT-4，并且同步升级了 ChatGPT，允许 ChatGPT Plus 的订阅者获得 GPT-4 的访问权限。
+
+2. [Claude](https://claude.ai/)
+
+Claude是由Anthropic开发的一个大型语言模型，它在多个任务上展示了超越ChatGPT-4的能力，特别是在理解深层次语言模式和复杂推理方面。
+
+3. [Gemini](https://gemini.google.com/)
+
+Gemini是由Google Research团队开发的一个大型语言模型，它在自然语言理解和生成方面具有强大的能力，通常用于研究和实验性项目。
+
+4. [Mistral](https://chat.mistral.ai/)
+
+Mistral是一个专注于生成式任务的AI模型，它通过学习大量数据来模拟和预测内容，常用于文本生成和图像生成等任务。
+
+5. Llama (Hugging Face Space)
+
+Llama是Hugging Face公司推出的一个模型，它在自然语言处理任务中表现出色，如文本分类、问答和文本生成，适用于多种应用场景。
+
+6. [Grok xAI](https://grok.x.ai/)
+
+Grok xAI是由Grok公司开发的一个AI模型，它在特定领域如金融和医疗中展现出深度学习和模式识别的能力，用于解决复杂的行业问题。
+
+## 二、国内大模型
+
+1. [星火大模型](https://xinghuo.xfyun.cn/)
+
+科大讯飞推出的AI大语言模型，提供多样化的智能服务，如绘画创作、编程辅助、PPT大纲生成等。
+
+2. [智谱清言](https://chatglm.cn/main/detail?fr=zjh)
+
+智谱AI开发的千亿参数对话模型，支持多轮对话和内容创作，具备信息归纳总结能力。
+
+3. [豆包](https://www.doubao.com/)
+
+提供AI搜索、PDF问答和图像生成等功能的智能平台，旨在帮助用户获取信息和创作内容。
+
+4. [Kimi](https://kimi.moonshot.cn/)
+
+Moonshot AI开发的智能助手，支持超长文本输入，适用于处理长文本的复杂任务。
+
+5. [Coze](https://www.coze.cn/)
+
+提供个性化推荐、财经信息查询、绘图助手等多种AI智能体，通过智能对话提供服务。
+
+6. [万知](https://wanzhi.com/)
+
+一站式AI工作平台，支持文档解析、PPT创作、长文速读等功能，助力阅读、创作和分享。
+
+7. [百川](https://www.baichuan-ai.com/)
+
+百川智能推出的超千亿参数大模型，支持中英双语，具备搜索增强技术，适用于多种文档和网址输入。
+
+8. [文心一言](https://yiyan.baidu.com/)
+
+百度推出的AI服务，利用大模型技术提供自然语言处理能力，支持多种智能应用场景。
+
+9. [通义千问](https://tongyi.aliyun.com/)
+
+阿里云提供的AI服务，基于大模型技术，提供智能问答和语言理解服务。
+
+10. [混元](https://hunyuan.tencent.com/bot)
+
+腾讯推出的混元助手小程序，提供便捷的AI服务，优化移动用户体验。
+
+11. [商量](https://chat.sensetime.com/)
+
+一个AI对话平台，提供智能对话服务，帮助用户解决问题和获取信息。
+
+12. [跃问](https://stepchat.cn/chats/new)
+
+新兴的AI聊天服务，允许用户进行智能对话，获取所需信息和支持。
+
+13. [Dify](https://dify.ai/)
+
+提供AI驱动的服务，旨在通过智能技术改善用户工作效率和生活质量。
+
+14. [万知](https://www.wanzhi.com/)
+
+另一入口指向万知平台，提供全面的AI服务，包括但不限于数据分析、文档阅读和内容创作。
+
+## 三、AI视频
+
+1. [Morph Studio](https://morphstudio.com/)
+
+一个创新的AI平台，专注于提供先进的图像和视频编辑工具，使用户能够轻松创建和编辑视觉内容。
+
+2. [Sora](https://openai.com/sora)
+
+OpenAI开发的文本到视频模型，能够生成长达一分钟的视频，同时保持视觉质量和遵循用户的提示。
+
+3. [Runway](https://app.runwayml.com/)
+
+提供多种创意工具，用于构思、生成和编辑内容，是一个全面的创意平台。
+
+4. [Pika](https://pika.art/)
+
+一个艺术和设计平台，利用AI技术帮助用户将创意想法转化为视觉艺术作品。
+
+5. [Pixverse](https://pixverse.ai/)
+
+一个AI驱动的视频创作平台，能够根据文本提示生成惊人的视频内容。
+
+6. [Moonvalley](https://moonvalley.ai/)
+
+一个突破性的文本到视频生成AI模型，可以从简单的文本提示创建令人惊叹的电影和动画视频。
+
+7. [Mootion](https://mootion.com/)
+
+世界上第一个文本到动作的AI，能够将文本想法动画化，并提供3D角色动画制作。
+
+8. [Domo AI](https://domoai.app/)
+
+一个AI驱动的艺术生成器，致力于推进人工智能研究，引领创新思维，并释放人类的创造潜力。
+
+9. Stable Video Diffusion (Fal.ai)
+
+由Fal.ai提供的视频扩散模型，能够根据提供的图像和控制图生成稳定的视频内容。
+
+10. Stable Video Diffusion (replicate)
+
+Replicate平台上提供的稳定视频扩散模型，用于创建高质量的视频内容。
+
+11. [replicate](https://replicate.com/lucataco/animate-diff)
+
+一个平台，提供多种AI工具，包括动画和视频编辑功能。
+
+12. [kaiber](https://kaiber.ai/)
+
+一个AI创意平台，提供多种工具和服务，以帮助用户实现他们的创意愿景。
+
+13. [剪映 Dreamina](https://dreamina.jianying.com/ai-tool/home)
+
+剪映提供的AI工具，帮助用户在视频编辑和创作中实现更多可能性。
+
+14. [度加](https://aigc.baidu.com/home)
+
+百度推出的AI生成内容平台，提供多种创意工具和服务。
+
+15. [Viggle](https://viggle.ai/)
+
+一个AI视频编辑平台，专注于提供创新的视频编辑和创作工具。
+
+## 四、AI图像
+
+1. [DreamStudio](https://dreamstudio.ai/)
+
+一个AI艺术创作平台，使用户能够利用AI技术生成独特的艺术作品。
+
+2. DALL-E (Copilot Designer)
+
+Microsoft的DALL-E项目，允许用户通过AI设计和创建图像。
+
+3. [Midjourney](https://www.midjourney.com/)
+
+一个独立的研究实验室，探索新的思维媒介，扩展人类想象力的边界。
+
+4. [Clipdrop](https://clipdrop.co/)
+
+一个创新的工具，帮助用户捕捉和存储灵感，便于创意工作的开展。
+
+5. [Krea.ai](https://www.krea.ai/apps/image/realtime)
+
+提供实时图像编辑和创作功能的AI应用。
+
+6. [Freepic Pikaso](https://freepik.com/pikaso)
+
+Freepik提供的AI艺术创作工具，帮助用户创造和编辑图像。
+
+7. [ImgPilot](https://www.imgpilot.com/)
+
+一个将草图转化为惊人艺术作品的AI平台。
+
+8. Latent Consistency (Fal.ai)
+
+Fal.ai提供的AI模型，能够根据用户的提示生成具有潜在一致性的图像。
+
+9. [Blockadelabs](https://www.blockadelabs.com/)
+
+提供360°全景生成器，使用户能够快速创建虚拟空间。
+
+10. Deep Dream Generator
+
+一个AI驱动的图像生成器，可以创建深度梦境风格的艺术作品。
+
+11. [magnific](https://magnific.ai/)
+
+一个AI艺术创作平台，提供多种创意工具。
+
+12. [civitai](https://civitai.com/)
+
+一个社区驱动的AI艺术平台，用户可以探索和购买AI生成的艺术作品。
+
+13. [openart](https://openart.ai/)
+
+一个开放的AI艺术平台，提供艺术作品的生成和交易。
+
+14. [liblib](https://www.liblib.art/)
+
+提供AI艺术作品的生成和展示。
+
+15. [vegaai](https://www.vegaai.net/)
+
+一个AI艺术创作平台，专注于提供高质量的视觉内容。
+
+16. [wujieai](https://www.wujieai.com/)
+
+一个AI视觉创作助手，提供图像生成和编辑功能。
+
+17. [dreamina](https://dreamina.jianying.com/ai-tool/home)
+
+剪映提供的AI工具，用于视频编辑和创作。
+
+18. [adobe](https://www.adobe.com/products/firefly.html)
+
+Adobe的AI创意工具，如Firefly，提供先进的图像和视频编辑功能。
+
+19. [gemini](https://gemini.google.com/)
+
+Google的AI项目，提供多种创意和技术工具。
+
+20. [diffus](https://www.diffus.me/)
+
+一个AI驱动的图像生成平台，专注于艺术和设计。
+
+21. [huggingface](https://huggingface.co/spaces/sczhou/CodeFormer)
+
+提供AI模型和工具，支持多种创意和研究应用。
+
+## 五、AI数字人
+
+1. [D-iD](https://studio.d-id.com/)
+
+D-iD提供一个虚拟内容创作平台，用户可以创建和编辑虚拟形象及视频，用于多种媒体和娱乐应用。
+
+2. [HeyGen](https://www.heygen.com/)
+
+HeyGen是一个AI视频生成平台，允许用户通过简单的文本提示生成虚拟角色视频，适用于广告、教育和娱乐等领域。
+
+3. [RaskAI](https://www.rask.ai/)
+
+RaskAI利用先进的AI技术，提供虚拟角色生成和视频制作服务，帮助用户快速制作高质量的视频内容。
+
+4. [讯飞智作](https://peiyin.xunfei.cn/virtual-broadcasting)
+
+科大讯飞的虚拟主播平台，提供虚拟数字人视频制作和虚拟客服服务，支持音频和视频制作，适用于多种场景。
+
+5. [商汤如影](http://senseavatar.sensetime.com/)
+
+商汤科技的虚拟形象生成平台，基于“商汤日日新SenseNova”大模型，提供自然语言处理和图片生成等服务。
+
+6. [Synthesia](https://www.synthesia.io/)
+
+Synthesia是一个AI视频平台，可以创建逼真的虚拟演讲者，支持多种语言和风格，适用于视频制作和内容创作。
+
+7. [Kalidoface](https://kalidoface.com/)
+
+Kalidoface提供一个AI驱动的面部捕捉和动画解决方案，可以将用户的面部表情和动作实时转换为虚拟角色。
+
+## 六、AI搜索
+
+1. [Globe Explorer](https://explorer.globe.engineer/)
+
+Globe Explorer是一个利用GPT-3.5和GPT-4等先进AI技术进行信息检索和探索的平台，提供用户与AI交互的界面。
+
+2. [Perplexity](https://www.perplexity.ai/)
+
+Perplexity是一个AI驱动的搜索工具，旨在帮助用户快速找到所需的信息和知识，提升搜索效率。
+
+3. [秘塔 AI 搜索](https://metaso.cn/)
+
+秘塔AI搜索是一个AI搜索引擎，它新增了学术搜索功能，用户可以通过切换搜索模式来获取全网或学术领域的搜索结果。
+
+4. [天工 AI](https://search.tiangong.cn/)
+
+天工AI是由昆仑万维科技股份有限公司开发的AI搜索工具，提供多种搜索服务和应用权限，支持用户进行高效的信息检索。
+
+5. [Devv AI](https://devv.ai/)
+
+Devv AI是一个AI服务平台，提供包括搜索在内的多种智能工具，帮助用户在不同场景下实现自动化和效率提升。
+
+## 七、AI语音
+
+1. [剪映 AI 克隆音色](https://mp.weixin.qq.com/s/nHIPaq4evPbvSQS1ctYZrA)
+
+剪映推出的AI克隆音色功能，允许用户通过简单的录音过程克隆自己的声音，用于文本朗读和视频制作。
+
+2. [ElevenLabs](https://elevenlabs.io/)
+
+ElevenLabs提供的AI语音生成器，支持多种语言和口音，适用于视频创作者、开发者和企业。
+
+3. [讯飞智作](https://peiyin.xunfei.cn/)
+
+科大讯飞的智能语音合成平台，提供多语种虚拟主播和一站式配音服务，适用于多种业务场景。
+
+4. [字节火山语音](https://www.volcengine.com/product/tts)
+
+字节跳动推出的语音合成服务，支持八大领域精品音色，覆盖多语种多方言，具有多样情感演绎能力。
+
+5. [微软语音](https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/)
+
+微软的Azure AI服务提供高质量的文本到语音转换，支持多种语言和声音选项。
+
+6. OpenAI Voice Engine
+
+OpenAI开发的Voice Engine，使用文本输入和单个15秒音频样本生成自然听起来的语音，致力于安全和负责任地开发AI。
+
+7. [大饼 AI 变声](https://dubbing.tech/)
+
+大饼AI变声技术，提供社交直播中的声音美化和变声效果，提升用户体验和互动乐趣。
+
+## 八、AI音乐
+
+1. [Stable Audio](https://www.stableaudio.com/)
+
+提供音频处理和音频效果服务，旨在帮助音乐制作者和音频工程师实现高质量的音频制作。
+
+2. [udio](https://udio.com/)
+
+一个音频平台，提供音频相关的服务和解决方案，包括音频制作和分发等。
+
+3. [SUNO](https://app.suno.ai/)
+
+利用AI技术，提供音乐创作和音频生成服务，帮助用户快速制作音乐和音频内容。
+
+4. [Mubert](https://mubert.com/)
+
+一个AI音乐生成平台，提供多种音乐风格和情感的AI生成音乐，适用于视频、播客和应用。
+
+5. [口袋乐队 app](https://apps.apple.com/cn/app/%E5%8F%A3%E8%A2%8B%E4%B9%90%E9%98%9F-%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C-%E5%94%B1%E6%AD%8C%E7%BC%96%E6%9B%B2-%E4%B9%90%E5%99%A8%E4%BC%B4%E5%A5%8F/id1603380354)
+
+一款音乐制作应用，允许用户创作、编曲、录唱和混音，适合不同水平的音乐爱好者。
+
+6. [和弦派 app](https://www.lazycomposer.com/introduce)
+
+一款基于AI音乐生成引擎的应用程序，为音乐人和爱好者提供智能创作、编曲和练习的工具。
+
+7. [X Studio](https://xstudio.music.163.com/)
+
+网易云音乐推出的AI歌声合成软件，包含多位AI歌手，提供快速的歌声合成服务。
+
+8. [ACE Studio](https://ace-studio.timedomain.cn/)
+
+提供下一代AI歌唱合成引擎，拥有多位AI歌手，支持多种语言，适用于音乐制作。
+
+9. [网易天音](https://tianyin.163.com/)
+
+网易云音乐的一站式AI音乐创作工具，提供AI辅助的音乐创作服务。
+
+10. [AIVA](https://aiva.ai/)
+
+
+
+一个AI音乐生成助手，允许用户在多种风格中生成新歌曲，支持个性化的音乐创作。
+
+# 九、3D
+
+1. [Artefacts AI](https://artefacts.ai/)
+
+提供AI辅助的3D设计服务，帮助用户快速创建和修改3D模型，适用于多种设计和建模需求。
+
+1. [Tripo3D](https://www.tripo3d.ai/)
+
+一个AI驱动的3D建模平台，使用户能够通过简单的操作生成复杂的3D结构和模型。
+
+1. [Meshy AI](https://www.meshy.ai/)
+
+Meshy AI利用人工智能技术，提供3D模型的自动优化和简化服务，提高3D打印和渲染的效率。
+
+1. [CSM AI](https://www.csm.ai/)
+
+CSM AI是一个先进的3D生成平台，支持从图像、草图或文本生成端到端的3D世界，旨在加速3D工作流程。
+
+1. [3DFY AI](https://3dfy.ai/)
+
+3DFY AI使用生成式人工智能技术，从文本描述快速创建高质量的3D模型，使3D内容的创建对每个人都变得可行。
+
+1. [Luma AI](https://captures.lumalabs.ai/imagine)
+
+Luma AI提供3D捕获和创建服务，使用户能够生成逼真的3D图像和模型。
+
+1. [Spline AI](https://spline.design/ai)
+
+Spline AI是一个AI驱动的3D设计工具，允许用户通过简单的提示生成对象、动画和纹理，简化3D设计过程。
+
+# 十、设计
+
+1. [Beautiful.ai](https://www.beautiful.ai/)
+
+Beautiful.ai 是一个在线演示文稿设计工具，它使用户能够创建既美观又专业的演示文稿。该平台提供易于使用的拖放界面，以及预先设计好的模板，帮助用户快速设计出符合设计原则的幻灯片。
+
+1. [Tome](https://beta.tome.app/)
+
+Tome 是一个面向销售和营销团队的AI原生研究和演示平台。它提供快速智能的格式编辑、个性化的AI和视频嵌入、交互式原型和媒体嵌入等功能。Tome 还具有响应式布局系统，确保幻灯片在任何设备上都能完美展示，并支持直接在移动浏览器中打开和查看演示文稿。
+
+1. [Gamma](https://gamma.app/)
+
+Gamma 是一个AI驱动的演示、网页和文档生成工具，允许用户在不到一分钟内创建可定制的工作演示文稿、文档或网页。Gamma 提供灵活的模板和一键式风格调整，使创建精美的幻灯片变得更加快捷和简单。
+
+1. [Canva](https://www.canva.com/)
+
+Canva 是一个广受欢迎的在线设计平台，它提供了丰富的设计模板和工具，使用户能够创建社交媒体图形、海报、邀请函、演示文稿等。Canva 以其用户友好的界面和丰富的资源库而闻名，适合各种设计水平的用户。
+
+点击右上角查看所有文章
+
+![](img/dd2262fb87944c721fb2641bce1252c0.png)
